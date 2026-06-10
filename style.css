@@ -244,12 +244,12 @@ nav a.active{
 
 /* TEXT */
 .card h3{
-  font-size:18px;
+  font-size:22px;
   margin-bottom:10px;
 }
 
 .card p{
-  font-size: 12px;
+  font-size: 13px;
   color:#94a3b8;
 }
 
@@ -533,3 +533,39 @@ color: gold;
   }
 }
 
+
+
+
+.faq-item {
+    margin-bottom: 15px;
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background:#111827 ;
+}
+
+.faq-item summary {
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "▼";
+    float: right;
+    font-size: 20px;
+}
+
+.faq-item[open] summary::after {
+    content: "▲";
+}
+
+.faq-item p {
+    margin-top: 12px;
+    line-height: 1.6;
+}
